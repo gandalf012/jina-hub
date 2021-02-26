@@ -34,7 +34,7 @@ Users can use Pod images in several ways:
   - ```python
     from jina.flow import Flow
     f = (Flow()
-        .add(name='my_encoder', uses='jinahub/pod.encoder.imagetorchencoder:0.0.8-1.0.4', port_in=55555, port_out=55556)
+        .add(name='my_encoder', uses='docker://jinahub/pod.encoder.imagetorchencoder:0.0.8-1.0.4', port_in=55555, port_out=55556)
     ```
 
 - Jina CLI
